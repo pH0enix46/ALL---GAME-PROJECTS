@@ -1,0 +1,208 @@
+/*  */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+body {
+  font-family: "Rubik Glitch Pop", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 10rem 24rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+h2 {
+  text-align: center;
+  color: rgb(48, 46, 46);
+  font-size: 3.2rem;
+  border-radius: 1.6rem;
+  padding: 1rem 1.2rem;
+  border-radius: 1.6rem;
+  padding: 1rem 1.2rem;
+  box-shadow: 0.6rem 0.6rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.computer-title {
+  background-image: linear-gradient(
+    90.5deg,
+    rgba(152, 45, 255, 1) 0.7%,
+    rgba(90, 241, 255, 1) 51.5%,
+    rgba(65, 239, 164, 1) 100.6%
+  );
+}
+
+.player-title {
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+
+.text {
+  text-align: center;
+  font-size: 3.4rem;
+  border-radius: 1.6rem;
+  padding: 1rem 1.2rem;
+  border-radius: 1.6rem;
+  padding: 1rem 1.2rem;
+  border: 2px solid rgba(190, 3, 3, 0.6);
+  box-shadow: 0.4rem 0.4rem 0.8rem rgba(0, 0, 0, 0.3);
+
+  background-image: linear-gradient(
+    90deg,
+    rgb(195, 195, 195) 0.2%,
+    rgb(170, 170, 170) 99.9%
+  );
+
+  width: 50%;
+  margin: 4rem auto;
+}
+
+.action {
+  padding: 0rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 16rem);
+  gap: 4rem;
+  grid-template-rows: 18rem;
+  justify-content: space-around;
+
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.deck {
+  height: 100%;
+  width: 100%;
+  border: 3px solid rgba(174, 174, 174, 0.8);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 3rem;
+  border-radius: 1rem;
+  color: white;
+  user-select: none;
+  box-shadow: 0.2rem 0.4rem 0.2rem rgba(0, 0, 0, 0.4);
+}
+
+.computer-deck {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 4.4rem;
+  text-shadow: 0.2rem 0.4rem 0.2rem rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(135deg, #81fbb8c7 10%, #057e3b 100%);
+}
+
+.player-deck {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 4.4rem;
+  text-shadow: 0.2rem 0.4rem 0.2rem rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(135deg, #97cdf3db 10%, #053e74 100%);
+}
+
+.card {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border: 3px solid rgba(174, 174, 174, 0.8);
+  border-radius: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+  border: 3px solid rgba(174, 174, 174, 0.8);
+  box-shadow: 0.2rem 0.4rem 0.2rem rgba(0, 0, 0, 0.4);
+
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(4rem);
+  -webkit-backdrop-filter: blur(4rem);
+
+  text-shadow: 0.2rem 0.4rem 0.2rem rgba(0, 0, 0, 0.4);
+}
+
+.card::before,
+.card::after {
+  position: absolute;
+  content: attr(data-value);
+  font-size: 2.4rem;
+
+  text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.4);
+}
+
+.card::before {
+  top: 0.5rem;
+  left: 0.5rem;
+}
+
+.card::after {
+  bottom: 0.5rem;
+  right: 0.5rem;
+  transform: rotate(180deg);
+}
+
+.card.red {
+  color: rgba(255, 0, 0, 0.9);
+}
+
+.card.black {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.play {
+  cursor: pointer;
+  font-size: 3rem;
+  border-radius: 1.6rem;
+  padding: 1rem 1.2rem;
+  border-radius: 1.6rem;
+  padding: 1rem 1.2rem;
+  box-shadow: 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  border: 3px solid rgba(3, 3, 115, 0.8);
+
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+}
+
+.reset {
+  cursor: pointer;
+  font-size: 2.6rem;
+  border-radius: 1.6rem;
+  padding: 1rem 1.2rem;
+  border-radius: 1.6rem;
+  padding: 1rem 1.2rem;
+  box-shadow: 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  border: 3px solid rgba(3, 3, 115, 0.8);
+
+  position: absolute;
+  top: 60%;
+  right: 1rem;
+}
+
+.footer {
+  margin-top: 6rem;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+}
