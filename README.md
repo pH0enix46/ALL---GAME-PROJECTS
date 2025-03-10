@@ -3,10 +3,7 @@
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
-![Babel](https://img.shields.io/badge/Babel-F9DC3e?style=for-the-badge&logo=babel&logoColor=black)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-  
+
 </div>
 <br/>
 
@@ -25,7 +22,6 @@
 | 01  | 1 𝗖𝗔𝗥𝗗 𝗚𝗔𝗠𝗘 𝗪𝗔𝗥                            | [𝗟𝗶𝝼𝗲 𝗗𝗲𝗺𝗼](https://card-game-war-phoenix46.netlify.app/)               |
 
 
-<a href="https://github.com/pH0enix46/ALL---GAME-PROJECTS">🐛 𝗕𝞄𝗴 𝗿𝗲𝗽𝝾𝗿𝘁</a>
 
 <br/>
 ✅ 𝗘𝗻𝗷𝝾𝝲! 𝗳𝝾𝗿 𝗹𝗲𝗮𝗿𝗻𝗶𝗻𝗴 
